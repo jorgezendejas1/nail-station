@@ -1,30 +1,41 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nail Station - Inicio</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nail Station ✨</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script defer src="js/particles.js"></script>
+  <script defer src="js/main.js"></script>
 </head>
 <body>
   <header class="hero">
-    <nav>
-      <img src="img/logo.jpg" alt="Logo Nail Station" class="logo">
-      <ul class="menu">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="portafolio.html">Galería</a></li>
-        <li><a href="reservas.html">Reservas</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-        <li><a href="diplomas.html">Diplomas</a></li>
-      </ul>
-    </nav>
+    <video autoplay muted loop id="hero-video">
+      <source src="img/hero.mp4" type="video/mp4">
+      Tu navegador no soporta video en fondo.
+    </video>
+    <canvas id="particles"></canvas>
     <div class="hero-content">
-      <h1>Tu Belleza, Nuestra Pasión</h1>
-      <p>Diseños únicos de uñas con un toque profesional. ¡Reserva hoy mismo!</p>
-      <a href="reservas.html" class="cta-button">Reserva Ahora</a>
+      <img src="img/logo.jpg" alt="Nail Station Logo" class="logo">
+      <h1 id="dynamic-title">Transformando tus uñas, un arte a la vez</h1>
+      <p>Explora tecnología de belleza como nunca antes 🌌</p>
+      <a href="reservas.html" class="btn-hero">Agenda tu cita</a>
     </div>
   </header>
+
+  <section class="futuro">
+    <h2>Tecnología de Punta</h2>
+    <ul>
+      <li>💅 Prueba tus esmaltes en Realidad Aumentada</li>
+      <li>🎨 Interfaz reactiva al movimiento del mouse</li>
+      <li>🧠 Asistente con IA para asesoría de uñas</li>
+      <li>🪙 Reservas confirmadas como NFT</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nail Station. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
