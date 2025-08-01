@@ -1,1 +1,1 @@
-// JavaScript opcional
+// JS opcional
