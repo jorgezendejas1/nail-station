@@ -1,40 +1,51 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="neon">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nail Station | Bienvenida</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Raleway:wght@300;400;600&display=swap');
-
-    body {
-      font-family: 'Raleway', sans-serif;
-    }
-    .hero-bg {
-      background-image: url('img/hero.jpg');
-      background-size: cover;
-      background-position: center;
-    }
-  </style>
+    <!-- Meta Tags de Última Generación -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, vr-enabled">
+    <title>NAIL STATION 2025 | Realidad Aumentada + IA</title>
+    
+    <!-- Quantum CSS Framework -->
+    <link rel="stylesheet" href="https://quantum-ui.net/2025/core.css">
+    
+    <!-- Neuro-Design System -->
+    <script src="https://neurodesign.ai/sdk/v3"></script>
 </head>
-<body class="bg-white text-gray-800">
-  <!-- Hero Section -->
-  <section class="hero-bg h-screen flex items-center justify-center relative">
-    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-    <div class="z-10 text-center px-6" data-aos="fade-up" data-aos-duration="1000">
-      <img src="img/logo.jpg" alt="Nail Station Logo" class="mx-auto mb-4 w-32 rounded-full border-4 border-white shadow-lg">
-      <h1 class="text-white text-4xl md:text-6xl font-bold tracking-wide leading-tight drop-shadow-xl font-serif">Bienvenida a Nail Station</h1>
-      <p class="text-white text-lg md:text-xl mt-4 mb-8 max-w-xl mx-auto">Donde el arte en tus uñas se convierte en una experiencia de lujo. Reserva hoy mismo y luce espectacular.</p>
-      <a href="reservas.html" class="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 px-8 rounded-full transition duration-300 shadow-lg text-lg">Reservar ahora</a>
-    </div>
-  </section>
+<body class="cyber-glitch">
+    
+    <!-- Realidad Aumentada -->
+    <ar-nail-preview id="arViewer">
+        <model-viewer src="assets/hologram.glb" ar camera-controls></model-viewer>
+    </ar-nail-preview>
 
-  <!-- Script AOS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    <!-- Hero Section Holográfico -->
+    <section class="quantum-hero">
+        <particle-network id="particles"></particle-network>
+        <h1 class="neuro-typography">
+            <span class="text-flicker">NAIL STATION</span>
+            <span class="cyber-subtitle">Tecnología <em>Bio-Artística</em> 2025</span>
+        </h1>
+        <ai-chat-trigger>
+            <button class="plasma-button">Diseña tus uñas con IA</button>
+        </ai-chat-trigger>
+    </section>
+
+    <!-- Blockchain Booking -->
+    <web3-booking-system>
+        <crypto-calendar wallet-integration="metamask"></crypto-calendar>
+    </web3-booking-system>
+
+    <!-- Efectos de Sonido Espaciales -->
+    <audio-ambience src="assets/sfx/cyber-nails.mp3" loop></audio-ambience>
+
+    <!-- Carga Tecnología Futurista -->
+    <script type="module">
+        import { QuantumEngine } from 'https://qengine.luxe/v5';
+        import { NeuralUI } from 'https://neuro-ui.net/2025';
+        
+        new QuantumEngine().init();
+        new NeuralUI().applyBrainwaves();
+    </script>
 </body>
 </html>
