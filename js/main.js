@@ -1,1 +1,0 @@
-document.addEventListener('scroll',()=>{const h=document.querySelector('.header');if(!h)return;h.style.boxShadow=(scrollY>8)?'0 6px 24px rgba(0,0,0,.35)':'none';});
